@@ -1,0 +1,12 @@
+<h1 class="well">Classrooms <%= link_to '+', new_classroom_path %></h1>
+<% @classrooms.each do |classroom| %>
+  <div class="container">
+    <h3><%= link_to classroom.classroom_name, classroom_path(classroom) %></h3>
+    <p> points: <%= classroom.classroom_total %></p>
+    <p>
+      <%= link_to 'Edit', edit_classroom_path(classroom)%> /
+      <%= link_to 'Delete', classroom, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
+  </div>
+<% end %>
+<br>

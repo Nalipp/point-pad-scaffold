@@ -1,0 +1,9 @@
+<div class="col-md-12 well">
+  <h1 class="col-md-8"><strong><%= link_to "Class : ", classrooms_path %> <%= @classroom.classroom_name %></strong></h1>
+  <h2 class="col-md-4">Point total : <%= @classroom.classroom_total %></h2>
+</div>
+<% @links.each do |classroom| %>
+  <div class="container">
+    <h4><%= link_to classroom.classroom_name, classroom_path(classroom) %> : <%= classroom.classroom_total %></h4>
+  </div>
+<% end %>
