@@ -1,4 +1,3 @@
-# point-pad
-
-A simple page for keeping track of classroom points for positive reinforcement.
+This is a site that allows teachers to manage classroom progress.
+Point pad helps teachers manage the classroom through positive reinforcement.
 # point-pad-scaffold
