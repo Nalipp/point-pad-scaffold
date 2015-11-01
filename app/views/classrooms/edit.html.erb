@@ -1,6 +1,7 @@
 <h1>Editing Classroom</h1>
 
-<%= render 'form' %>
+<%= link_to classrooms_path do %>
+  <h4><i class="glyphicon glyphicon-chevron-left">Back</i></h4>
+<% end %>
 
-<%= link_to 'Show', @classroom %> |
-<%= link_to 'Back', classrooms_path %>
+<%= render 'form' %>

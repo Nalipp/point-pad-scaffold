@@ -1,5 +1,9 @@
 <h1 class="well">New Classroom</h1>
 
-<%= render 'form' %>
+<div class="container">
+  <%= link_to classrooms_path do %>
+    <h4><i class="glyphicon glyphicon-chevron-left">Back</i></h4>
+  <% end %>
+</div>
 
-<%= link_to 'Back', classrooms_path %>
+<%= render 'form' %>

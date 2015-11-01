@@ -1,6 +1,22 @@
 <div class="col-md-12 well">
-  <h1 class="col-md-8"><strong><%= link_to "Class : ", classrooms_path %> <%= @classroom.classroom_name %></strong></h1>
-  <h2 class="col-md-4">Point total : <%= @classroom.classroom_total %></h2>
+  <div class="col-md-8">
+    <h1 class="inline-block-left"><strong><%= @classroom.classroom_name %></strong></h1>
+    <%= link_to edit_classroom_path do %>
+      <p class="inline-block-right"><i class="glyphicon glyphicon-edit"></i></p>
+    <% end %>
+    <%= link_to classrooms_path do %>
+      <p><i class="glyphicon glyphicon-chevron-left">Back</i></p>
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <h2>Points : <%= @classroom.classroom_total %></h2>
+  </div>
+  <div class="col-md-2">
+    <h1>
+      <i class="glyphicon icons glyphicon-triangle-top"></i>
+      <i class="glyphicon icons glyphicon-triangle-bottom"></i>
+    </h1>
+  </div>
 </div>
 <div class="col-md-12">
   <%= image_tag @classroom.picture.url if @classroom.picture? %>

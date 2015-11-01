@@ -1,7 +1,7 @@
 <%= simple_form_for(@classroom, html: {class: "form-signin", multipart: true}) do |f| %>
   <%= f.error_notification %>
     <%= f.input :classroom_name, required: true, label: false, placeholder: "Name", input_html: {class: "form-control"} %>
-    <%= f.input :classroom_total, label: false, placeholder: "Point total", input_html: {class: "form-control"} %>
+    <%= f.input :classroom_total, label: false, placeholder: "Starting point total", input_html: {class: "form-control"} %>
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
     <%= f.button :submit %>
 <% end %>
